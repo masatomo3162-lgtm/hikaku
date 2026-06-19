@@ -14,8 +14,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f0ec;color:#1a1a18}
 .app{max-width:680px;margin:0 auto;min-height:100vh;background:#fff}
-
-/* ヘッダー */
 .header{background:#2d2d2d;color:#fff;padding:14px 16px 10px;position:sticky;top:0;z-index:99}
 .header-row{display:flex;justify-content:space-between;align-items:center}
 .header h1{font-size:17px;font-weight:600}
@@ -24,90 +22,95 @@ html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sa
 .year-btn{background:rgba(255,255,255,0.15);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .year-btn:hover{background:rgba(255,255,255,0.3)}
 .year-label{font-size:16px;font-weight:600;color:#fff;min-width:60px;text-align:center}
-
-/* タブ */
 .tabs{display:flex;border-bottom:1px solid #e8e8e3;background:#fff;position:sticky;top:54px;z-index:98}
-.tab{flex:1;padding:11px 4px;font-size:13px;cursor:pointer;border:none;background:none;color:#888;border-bottom:2px solid transparent;transition:all .15s}
+.tab{flex:1;padding:10px 2px;font-size:12px;cursor:pointer;border:none;background:none;color:#888;border-bottom:2px solid transparent;transition:all .15s}
 .tab.active{color:#2d2d2d;font-weight:600;border-bottom-color:#2d2d2d}
-
 .section{display:none;padding:14px 16px}.section.active{display:block}
-
-/* カード */
 .card{background:#fff;border:1px solid #e8e8e3;border-radius:12px;overflow:hidden;margin-bottom:14px}
-.card-title{font-size:12px;font-weight:600;color:#888;padding:12px 14px 8px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid #f0f0ec}
-
-/* 店舗名編集 */
+.card-title{font-size:12px;font-weight:600;color:#888;padding:10px 14px 8px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid #f0f0ec}
 .store-names{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
 .store-name-box{border-radius:10px;padding:10px 12px;display:flex;align-items:center;gap:8px}
 .store-a{background:#EBF4FF;border:1px solid #b5d4f4}
 .store-b{background:#FFF4EB;border:1px solid #f4c989}
 .store-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.dot-a{background:#185fa5}
-.dot-b{background:#c46b00}
+.dot-a{background:#185fa5}.dot-b{background:#c46b00}
 .store-name-input{background:none;border:none;font-size:14px;font-weight:600;color:#1a1a18;width:100%}
 .store-name-input:focus{outline:none}
-
-/* サマリーカード（上段：月別） */
+/* 概要グリッド */
 .summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid #f0f0ec}
-.summary-col{padding:0}
 .summary-col:first-child{border-right:1px solid #f0f0ec}
-.store-header{padding:8px 14px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;border-bottom:1px solid #f0f0ec}
-.sh-a{background:#EBF4FF;color:#185fa5}
-.sh-b{background:#FFF4EB;color:#c46b00}
-
-/* 月テーブル */
+.store-header{padding:7px 12px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;border-bottom:1px solid #f0f0ec}
+.sh-a{background:#EBF4FF;color:#185fa5}.sh-b{background:#FFF4EB;color:#c46b00}
 .month-table{width:100%;border-collapse:collapse}
-.month-table th{font-size:11px;font-weight:600;color:#aaa;padding:6px 10px;text-align:right;background:#fafaf8}
+.month-table th{font-size:11px;font-weight:600;color:#aaa;padding:5px 8px;text-align:right;background:#fafaf8}
 .month-table th:first-child{text-align:left}
-.month-table td{font-size:13px;padding:7px 10px;border-top:1px solid #f5f5f0;text-align:right}
-.month-table td:first-child{text-align:left;color:#555;font-size:12px}
+.month-table td{font-size:12px;padding:6px 8px;border-top:1px solid #f5f5f0;text-align:right}
+.month-table td:first-child{text-align:left;color:#555;font-size:11px}
 .month-table tr:hover td{background:#fafaf8}
-.month-table .total-row td{font-weight:700;background:#f5f5f0;color:#1a1a18}
+.month-table .total-row td{font-weight:700;background:#f5f5f0;font-size:12px}
 .month-table .cum{font-size:11px;color:#aaa}
-
-/* 年間テーブル（下段） */
+/* 年間テーブル */
 .year-table{width:100%;border-collapse:collapse}
-.year-table th{font-size:11px;font-weight:600;color:#aaa;padding:8px 14px;text-align:right;background:#fafaf8;border-bottom:1px solid #f0f0ec}
+.year-table th{font-size:11px;font-weight:600;color:#aaa;padding:7px 14px;text-align:right;background:#fafaf8;border-bottom:1px solid #f0f0ec}
 .year-table th:first-child{text-align:left}
-.year-table td{font-size:14px;font-weight:500;padding:10px 14px;border-top:1px solid #f0f0ec;text-align:right}
+.year-table td{font-size:14px;font-weight:500;padding:9px 14px;border-top:1px solid #f0f0ec;text-align:right}
 .year-table td:first-child{text-align:left;color:#555;font-size:13px;font-weight:400}
 .year-table .cur-year td{background:#FFFBF0}
-.year-table .a-val{color:#185fa5}
-.year-table .b-val{color:#c46b00}
-.year-table .total-val{font-weight:700;color:#1a1a18}
-
-/* 入力フォーム */
+.a-val{color:#185fa5}.b-val{color:#c46b00}
+/* 月別タブ セレクト行 */
+.sel-row{display:flex;gap:8px;margin-bottom:12px;align-items:center;flex-wrap:wrap}
+.sel-row select{padding:7px 12px;border:1.5px solid #ddd;border-radius:10px;font-size:13px;background:#fff;color:#1a1a18}
+.sel-row select:focus{outline:none;border-color:#2d2d2d}
+.view-toggle{display:flex;gap:4px}
+.vt-btn{padding:6px 12px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:1.5px solid #ddd;background:#fff;color:#888}
+.vt-btn.active{background:#2d2d2d;color:#fff;border-color:#2d2d2d}
+/* 日別テーブル */
+.daily-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.daily-col:first-child{border-right:1px solid #f0f0ec}
+.daily-table{width:100%;border-collapse:collapse}
+.daily-table th{font-size:10px;font-weight:600;color:#aaa;padding:5px 8px;text-align:right;background:#fafaf8}
+.daily-table th:first-child{text-align:left;padding-left:10px}
+.daily-table td{font-size:12px;padding:5px 8px;border-top:1px solid #f5f5f0;text-align:right}
+.daily-table td:first-child{text-align:left;color:#888;font-size:11px;padding-left:10px}
+.daily-table tr:hover td{background:#fafaf8}
+.daily-table .total-row td{font-weight:700;background:#f5f5f0}
+/* 月別テーブル（月別タブ用） */
+.mo-full-table{width:100%;border-collapse:collapse}
+.mo-full-table th{font-size:11px;font-weight:600;color:#aaa;padding:7px 12px;text-align:right;background:#fafaf8;border-bottom:1px solid #f0f0ec}
+.mo-full-table th:first-child{text-align:left}
+.mo-full-table td{font-size:13px;padding:8px 12px;border-top:1px solid #f0f0ec;text-align:right}
+.mo-full-table td:first-child{text-align:left;color:#555;font-size:12px}
+.mo-full-table .total-row td{font-weight:700;background:#f5f5f0}
+/* 入力 */
+.inp-mode-row{display:flex;gap:4px;margin-bottom:12px}
 .inp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px}
-.inp-col{}
 .inp-col-title{font-size:12px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.it-a{color:#185fa5}
-.it-b{color:#c46b00}
-.month-inputs{}
+.it-a{color:#185fa5}.it-b{color:#c46b00}
 .month-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
-.month-row label{font-size:12px;color:#888;width:28px;flex-shrink:0}
-.month-row input{flex:1;padding:7px 10px;border:1.5px solid #e0e0e0;border-radius:8px;font-size:14px;text-align:right;color:#1a1a18;background:#fff}
+.month-row label{font-size:12px;color:#888;width:32px;flex-shrink:0}
+.month-row input{flex:1;padding:7px 8px;border:1.5px solid #e0e0e0;border-radius:8px;font-size:14px;text-align:right;color:#1a1a18;background:#fff}
 .month-row input:focus{outline:none;border-color:#2d2d2d}
 .month-row input.has-val{border-color:#b0c8e8;background:#f0f6ff}
 .inp-col-b .month-row input.has-val{border-color:#e8c88a;background:#fff8f0}
-
+.day-inp-sel{display:flex;gap:8px;padding:14px 14px 0;align-items:center;flex-wrap:wrap}
+.day-inp-sel select{padding:7px 10px;border:1.5px solid #ddd;border-radius:8px;font-size:13px;background:#fff}
+.day-inp-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:10px}
+.day-inp-col{padding:0 14px 14px}
+.day-inp-col:first-child{border-right:1px solid #f0f0ec}
+.day-inp-title{font-size:12px;font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:6px;padding-top:12px}
 .save-btn{display:block;width:calc(100% - 28px);margin:0 14px 14px;padding:12px;background:#2d2d2d;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:500;cursor:pointer}
 .save-btn:hover{background:#1a1a18}
-
-/* 設定 */
-.setting-row{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #f0f0ec}
-.setting-row:last-child{border-bottom:none}
-.sr-label{font-size:14px}
-.sr-sub{font-size:12px;color:#aaa;margin-top:2px}
-.small-btn{padding:7px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:1.5px solid #ddd;background:#fff;color:#1a1a18}
-.small-btn:hover{background:#f5f5f0}
-.btn-csv{color:#185fa5;border-color:#b5d4f4;background:#e6f1fb}
-.btn-imp{color:#3b6d11;border-color:#c0dd97;background:#eaf3de}
-.btn-danger{color:#a32d2d;border-color:#f7c1c1;background:#fcebeb}
-
 .msg{font-size:13px;padding:9px 14px;margin:0 14px 14px;border-radius:8px;display:none}
 .msg.ok{background:#eaf3de;color:#3b6d11}
 .msg.err{background:#fcebeb;color:#a32d2d}
-
+/* 設定 */
+.setting-row{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #f0f0ec}
+.setting-row:last-child{border-bottom:none}
+.sr-label{font-size:14px}.sr-sub{font-size:12px;color:#aaa;margin-top:2px}
+.small-btn{padding:7px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:1.5px solid #ddd;background:#fff;color:#1a1a18}
+.btn-csv{color:#185fa5;border-color:#b5d4f4;background:#e6f1fb}
+.btn-imp{color:#3b6d11;border-color:#c0dd97;background:#eaf3de}
+.btn-danger{color:#a32d2d;border-color:#f7c1c1;background:#fcebeb}
 /* PIN */
 #pin-screen{position:fixed;inset:0;background:#2d2d2d;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1000;gap:24px}
 #pin-screen h1{color:#fff;font-size:22px;font-weight:500}
@@ -119,13 +122,10 @@ html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sa
 .key:active{background:rgba(255,255,255,0.25)}
 .pin-err{color:rgba(255,255,255,0.85);font-size:14px;min-height:20px}
 .pin-note{color:rgba(255,255,255,0.7);font-size:13px;text-align:center;max-width:260px;line-height:1.6}
-
 .empty-note{text-align:center;padding:24px;color:#bbb;font-size:13px}
 </style>
 </head>
 <body>
-
-<!-- PIN -->
 <div id="pin-screen">
   <h1>店舗売上管理</h1>
   <div class="pin-dots">
@@ -153,7 +153,6 @@ html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sa
       </div>
     </div>
   </div>
-
   <div class="tabs">
     <button class="tab active" onclick="sw('overview')">概要</button>
     <button class="tab" onclick="sw('monthly')">月別</button>
@@ -162,97 +161,136 @@ html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sa
     <button class="tab" onclick="sw('settings')">設定</button>
   </div>
 
-  <!-- 概要タブ -->
+  <!-- 概要 -->
   <div id="sec-overview" class="section active">
     <div class="store-names">
-      <div class="store-name-box store-a">
-        <div class="store-dot dot-a"></div>
-        <input class="store-name-input" id="name-a" value="店舗A" onchange="saveNames()" placeholder="店舗A">
-      </div>
-      <div class="store-name-box store-b">
-        <div class="store-dot dot-b"></div>
-        <input class="store-name-input" id="name-b" value="店舗B" onchange="saveNames()" placeholder="店舗B">
-      </div>
+      <div class="store-name-box store-a"><div class="store-dot dot-a"></div><input class="store-name-input" id="name-a" value="店舗A" onchange="saveNames()" placeholder="店舗A"></div>
+      <div class="store-name-box store-b"><div class="store-dot dot-b"></div><input class="store-name-input" id="name-b" value="店舗B" onchange="saveNames()" placeholder="店舗B"></div>
     </div>
-
-    <!-- 月別上段 -->
     <div class="card">
-      <div class="card-title" id="ov-month-title">月別売上（年）</div>
+      <div class="card-title" id="ov-month-title">月別売上</div>
       <div class="summary-grid">
         <div class="summary-col">
           <div class="store-header sh-a"><span class="store-dot dot-a"></span><span id="ov-name-a">店舗A</span></div>
-          <table class="month-table">
-            <thead><tr><th>月</th><th>売上</th><th>累計</th></tr></thead>
-            <tbody id="ov-a"></tbody>
-          </table>
+          <table class="month-table"><thead><tr><th>月</th><th>売上</th><th>累計</th></tr></thead><tbody id="ov-a"></tbody></table>
         </div>
         <div class="summary-col">
           <div class="store-header sh-b"><span class="store-dot dot-b"></span><span id="ov-name-b">店舗B</span></div>
-          <table class="month-table">
-            <thead><tr><th>月</th><th>売上</th><th>累計</th></tr></thead>
-            <tbody id="ov-b"></tbody>
-          </table>
+          <table class="month-table"><thead><tr><th>月</th><th>売上</th><th>累計</th></tr></thead><tbody id="ov-b"></tbody></table>
         </div>
       </div>
     </div>
-
-    <!-- 年間下段 -->
     <div class="card">
       <div class="card-title">年間売上比較</div>
       <table class="year-table">
-        <thead><tr><th>年</th><th id="yt-a">店舗A</th><th id="yt-b">店舗B</th><th>合計</th></tr></thead>
+        <thead><tr><th>年</th><th id="yt-a">店舗A</th><th id="yt-b">店舗B</th></tr></thead>
         <tbody id="year-body"></tbody>
       </table>
     </div>
   </div>
 
-  <!-- 月別タブ -->
+  <!-- 月別 -->
   <div id="sec-monthly" class="section">
-    <div class="card">
-      <div class="card-title" id="mo-title">月別詳細</div>
-      <table class="month-table" style="width:100%">
-        <thead><tr><th style="text-align:left;padding:8px 14px">月</th><th id="mo-ha" style="padding:8px 10px">店舗A</th><th id="mo-hb" style="padding:8px 10px">店舗B</th><th style="padding:8px 14px">合計</th><th style="padding:8px 14px">累計</th></tr></thead>
-        <tbody id="mo-body"></tbody>
-      </table>
+    <div class="sel-row">
+      <select id="mo-month-sel" onchange="renderMonthly()"></select>
+      <div class="view-toggle">
+        <button class="vt-btn active" onclick="setMonthView('month',this)">月次</button>
+        <button class="vt-btn" onclick="setMonthView('daily',this)">日別</button>
+      </div>
+    </div>
+    <!-- 月次ビュー -->
+    <div id="mo-view-month">
+      <div class="card">
+        <div class="card-title" id="mo-title">月別詳細</div>
+        <table class="mo-full-table">
+          <thead><tr><th>月</th><th id="mo-ha" style="text-align:right">店舗A</th><th id="mo-hb" style="text-align:right">店舗B</th></tr></thead>
+          <tbody id="mo-body"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- 日別ビュー -->
+    <div id="mo-view-daily" style="display:none">
+      <div class="card">
+        <div class="card-title" id="daily-title">日別売上</div>
+        <div class="daily-grid">
+          <div class="daily-col">
+            <div class="store-header sh-a" style="padding:7px 10px"><span class="store-dot dot-a"></span><span id="dv-name-a">店舗A</span></div>
+            <table class="daily-table"><thead><tr><th>日</th><th>売上</th><th>累計</th></tr></thead><tbody id="dv-a"></tbody></table>
+          </div>
+          <div class="daily-col">
+            <div class="store-header sh-b" style="padding:7px 10px"><span class="store-dot dot-b"></span><span id="dv-name-b">店舗B</span></div>
+            <table class="daily-table"><thead><tr><th>日</th><th>売上</th><th>累計</th></tr></thead><tbody id="dv-b"></tbody></table>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- 年別タブ -->
+  <!-- 年別 -->
   <div id="sec-yearly" class="section">
     <div class="card">
       <div class="card-title">全年度 年間売上</div>
       <table class="year-table">
-        <thead><tr><th>年</th><th id="yr-ha">店舗A</th><th id="yr-hb">店舗B</th><th>合計</th></tr></thead>
+        <thead><tr><th>年</th><th id="yr-ha" style="text-align:right">店舗A</th><th id="yr-hb" style="text-align:right">店舗B</th></tr></thead>
         <tbody id="yr-body"></tbody>
       </table>
     </div>
   </div>
 
-  <!-- 入力タブ -->
+  <!-- 入力 -->
   <div id="sec-input" class="section">
-    <div class="card">
-      <div class="card-title" id="inp-title">月次売上入力</div>
-      <div class="inp-grid">
-        <div class="inp-col">
-          <div class="inp-col-title it-a"><span class="store-dot dot-a"></span><span id="inp-name-a">店舗A</span></div>
-          <div class="month-inputs" id="inp-a"></div>
+    <div class="inp-mode-row">
+      <button class="vt-btn active" onclick="setInpMode('month',this)">月次入力</button>
+      <button class="vt-btn" onclick="setInpMode('daily',this)">日別入力</button>
+    </div>
+    <!-- 月次入力 -->
+    <div id="inp-view-month">
+      <div class="card">
+        <div class="card-title" id="inp-title">月次売上入力</div>
+        <div class="inp-grid">
+          <div class="inp-col">
+            <div class="inp-col-title it-a"><span class="store-dot dot-a"></span><span id="inp-name-a">店舗A</span></div>
+            <div id="inp-a"></div>
+          </div>
+          <div class="inp-col inp-col-b">
+            <div class="inp-col-title it-b"><span class="store-dot dot-b"></span><span id="inp-name-b">店舗B</span></div>
+            <div id="inp-b"></div>
+          </div>
         </div>
-        <div class="inp-col inp-col-b">
-          <div class="inp-col-title it-b"><span class="store-dot dot-b"></span><span id="inp-name-b">店舗B</span></div>
-          <div class="month-inputs" id="inp-b"></div>
-        </div>
+        <div class="msg" id="inp-msg"></div>
+        <button class="save-btn" onclick="saveMonthly()">保存する</button>
       </div>
-      <div class="msg" id="inp-msg"></div>
-      <button class="save-btn" onclick="saveData()">保存する</button>
+    </div>
+    <!-- 日別入力 -->
+    <div id="inp-view-daily" style="display:none">
+      <div class="card">
+        <div class="card-title">日別売上入力</div>
+        <div class="day-inp-sel">
+          <select id="day-inp-year" onchange="buildDayForm()"></select>
+          <select id="day-inp-month" onchange="buildDayForm()"></select>
+        </div>
+        <div class="day-inp-grid">
+          <div class="day-inp-col">
+            <div class="day-inp-title it-a"><span class="store-dot dot-a"></span><span id="dinp-name-a">店舗A</span></div>
+            <div id="dinp-a"></div>
+          </div>
+          <div class="day-inp-col inp-col-b">
+            <div class="day-inp-title it-b"><span class="store-dot dot-b"></span><span id="dinp-name-b">店舗B</span></div>
+            <div id="dinp-b"></div>
+          </div>
+        </div>
+        <div class="msg" id="dinp-msg"></div>
+        <button class="save-btn" onclick="saveDaily()">保存する</button>
+      </div>
     </div>
   </div>
 
-  <!-- 設定タブ -->
+  <!-- 設定 -->
   <div id="sec-settings" class="section">
     <div class="card">
       <div class="card-title">データ管理</div>
       <div class="setting-row">
-        <div><div class="sr-label">CSVエクスポート</div><div class="sr-sub">表示中の年のデータを出力</div></div>
+        <div><div class="sr-label">CSVエクスポート（今年）</div><div class="sr-sub">表示中の年のデータを出力</div></div>
         <button class="small-btn btn-csv" onclick="exportCSV()">CSV出力</button>
       </div>
       <div class="setting-row">
@@ -280,88 +318,74 @@ html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sa
 
 <script>
 const MONTHS=['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
-const DKEY='store_sales_v1';
+const MKEY='store_sales_v1';   // 月次データ {YYYY-MM:{a,b}}
+const DKEY='store_daily_v1';   // 日別データ {YYYY-MM-DD:{a,b}}
 const NKEY='store_names_v1';
 const PKEY='store_pin_v1';
 let curYear=new Date().getFullYear();
+let monthView='month', inpMode='month';
 let pinBuf='',pinMode='verify',pinStep=1,pinFirst='';
 
-// ── ユーティリティ ────────────────────────────────
 function fmt(n){return n?Math.round(n).toLocaleString('ja-JP'):'-'}
-function fmtN(n){return n?'¥'+Math.round(n).toLocaleString('ja-JP'):'-'}
-function loadData(){try{return JSON.parse(localStorage.getItem(DKEY)||'{}')}catch{return{}}}
-function saveRaw(d){localStorage.setItem(DKEY,JSON.stringify(d))}
+function fmtY(n){return n?'¥'+Math.round(n).toLocaleString('ja-JP'):'-'}
+function loadM(){try{return JSON.parse(localStorage.getItem(MKEY)||'{}')}catch{return{}}}
+function loadD(){try{return JSON.parse(localStorage.getItem(DKEY)||'{}')}catch{return{}}}
+function saveM(d){localStorage.setItem(MKEY,JSON.stringify(d))}
+function saveD(d){localStorage.setItem(DKEY,JSON.stringify(d))}
 function getNames(){try{const n=JSON.parse(localStorage.getItem(NKEY)||'{}');return{a:n.a||'店舗A',b:n.b||'店舗B'}}catch{return{a:'店舗A',b:'店舗B'}}}
 function saveNames(){
   const a=document.getElementById('name-a').value||'店舗A';
   const b=document.getElementById('name-b').value||'店舗B';
   localStorage.setItem(NKEY,JSON.stringify({a,b}));
-  updateNameLabels();renderAll();
+  updateLabels();renderAll();
 }
-function updateNameLabels(){
+function updateLabels(){
   const{a,b}=getNames();
-  ['ov-name-a','ov-name-b','inp-name-a','inp-name-b'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=id.endsWith('-a')?a:b});
-  ['yt-a','yt-b','mo-ha','mo-hb','yr-ha','yr-hb'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=id.endsWith('-a')||id.endsWith('ha')?a:b});
+  [['ov-name-a','ov-name-b'],['inp-name-a','inp-name-b'],['dinp-name-a','dinp-name-b'],['dv-name-a','dv-name-b']].forEach(([ia,ib])=>{
+    const ea=document.getElementById(ia),eb=document.getElementById(ib);
+    if(ea)ea.textContent=a;if(eb)eb.textContent=b;
+  });
+  ['yt-a','yr-ha','mo-ha'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=a});
+  ['yt-b','yr-hb','mo-hb'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=b});
   document.getElementById('name-a').value=a;
   document.getElementById('name-b').value=b;
 }
 function getPin(){return localStorage.getItem(PKEY)||''}
 function savePin(p){localStorage.setItem(PKEY,p)}
 function getYears(){
-  const d=loadData();
-  const s=new Set(Object.keys(d).map(k=>k.slice(0,4)));
+  const md=loadM(),dd=loadD();
+  const s=new Set([...Object.keys(md),...Object.keys(dd)].map(k=>k.slice(0,4)));
   s.add(String(new Date().getFullYear()));
   return [...s].sort();
 }
+function daysInMonth(y,m){return new Date(y,m,0).getDate()}
 
 // ── PIN ──────────────────────────────────────────
 function initPin(){
   const pin=getPin();
-  if(!pin){
-    pinMode='setup';pinStep=1;
-    document.getElementById('pin-note').textContent='初回設定：4桁のPINを入力してください';
-    document.querySelector('#pin-screen h1').textContent='PIN設定';
-  }else{
-    pinMode='verify';
-    document.getElementById('pin-note').textContent='';
-  }
+  if(!pin){pinMode='setup';pinStep=1;document.getElementById('pin-note').textContent='初回設定：4桁のPINを入力してください';document.querySelector('#pin-screen h1').textContent='PIN設定';}
+  else{pinMode='verify';document.getElementById('pin-note').textContent='';}
 }
-function pk(k){
-  if(pinBuf.length>=4)return;
-  pinBuf+=k;updatePinDots();
-  if(pinBuf.length===4)setTimeout(handlePin,120);
-}
-function pd(){if(pinBuf.length>0){pinBuf=pinBuf.slice(0,-1);updatePinDots()}}
-function updatePinDots(){for(let i=0;i<4;i++)document.getElementById('pd'+i).classList.toggle('filled',i<pinBuf.length)}
+function pk(k){if(pinBuf.length>=4)return;pinBuf+=k;upd();if(pinBuf.length===4)setTimeout(handlePin,120)}
+function pd(){if(pinBuf.length>0){pinBuf=pinBuf.slice(0,-1);upd()}}
+function upd(){for(let i=0;i<4;i++)document.getElementById('pd'+i).classList.toggle('filled',i<pinBuf.length)}
 function handlePin(){
   const err=document.getElementById('pin-err');
   if(pinMode==='verify'){
-    if(pinBuf===getPin()){unlockApp()}
-    else{err.textContent='PINが違います';pinBuf='';updatePinDots();setTimeout(()=>err.textContent='',1500)}
+    if(pinBuf===getPin())unlockApp();
+    else{err.textContent='PINが違います';pinBuf='';upd();setTimeout(()=>err.textContent='',1500)}
   }else if(pinMode==='setup'){
-    if(pinStep===1){pinFirst=pinBuf;pinBuf='';updatePinDots();document.getElementById('pin-note').textContent='もう一度入力（確認）';pinStep=2}
-    else{
-      if(pinBuf===pinFirst){savePin(pinBuf);unlockApp()}
-      else{err.textContent='一致しません。やり直してください';pinBuf='';pinFirst='';pinStep=1;updatePinDots();document.getElementById('pin-note').textContent='4桁のPINを入力してください';setTimeout(()=>err.textContent='',2000)}
-    }
+    if(pinStep===1){pinFirst=pinBuf;pinBuf='';upd();document.getElementById('pin-note').textContent='もう一度入力（確認）';pinStep=2}
+    else{if(pinBuf===pinFirst){savePin(pinBuf);unlockApp()}else{err.textContent='一致しません';pinBuf='';pinFirst='';pinStep=1;upd();document.getElementById('pin-note').textContent='4桁のPINを入力してください';setTimeout(()=>err.textContent='',2000)}}
   }else if(pinMode==='change'){
-    if(pinStep===1){
-      if(pinBuf!==getPin()){err.textContent='現在のPINが違います';pinBuf='';updatePinDots();setTimeout(()=>err.textContent='',1500);return}
-      pinStep=2;pinBuf='';updatePinDots();document.getElementById('pin-note').textContent='新しいPINを入力してください';
-    }else if(pinStep===2){pinFirst=pinBuf;pinBuf='';updatePinDots();document.getElementById('pin-note').textContent='新しいPINをもう一度入力してください';pinStep=3}
-    else{
-      if(pinBuf===pinFirst){savePin(pinBuf);unlockApp();document.getElementById('pin-status').textContent='設定済み';alert('PINを変更しました')}
-      else{err.textContent='一致しません';pinBuf='';pinFirst='';pinStep=2;updatePinDots();document.getElementById('pin-note').textContent='新しいPINを入力してください';setTimeout(()=>err.textContent='',2000)}
-    }
+    if(pinStep===1){if(pinBuf!==getPin()){err.textContent='現在のPINが違います';pinBuf='';upd();setTimeout(()=>err.textContent='',1500);return}pinStep=2;pinBuf='';upd();document.getElementById('pin-note').textContent='新しいPINを入力してください';}
+    else if(pinStep===2){pinFirst=pinBuf;pinBuf='';upd();document.getElementById('pin-note').textContent='新しいPINをもう一度入力してください';pinStep=3}
+    else{if(pinBuf===pinFirst){savePin(pinBuf);unlockApp();document.getElementById('pin-status').textContent='設定済み';alert('PINを変更しました')}else{err.textContent='一致しません';pinBuf='';pinFirst='';pinStep=2;upd();document.getElementById('pin-note').textContent='新しいPINを入力してください';setTimeout(()=>err.textContent='',2000)}}
   }
 }
-function unlockApp(){
-  document.getElementById('pin-screen').style.display='none';
-  document.getElementById('main-app').style.display='block';
-  initApp();
-}
+function unlockApp(){document.getElementById('pin-screen').style.display='none';document.getElementById('main-app').style.display='block';initApp()}
 function changePIN(){
-  pinMode='change';pinStep=1;pinBuf='';pinFirst='';updatePinDots();
+  pinMode='change';pinStep=1;pinBuf='';pinFirst='';upd();
   document.querySelector('#pin-screen h1').textContent='PIN変更';
   document.getElementById('pin-note').textContent='現在のPINを入力してください';
   document.getElementById('pin-err').textContent='';
@@ -373,197 +397,260 @@ function changePIN(){
 function initApp(){
   const now=new Date();
   document.getElementById('hdr-sub').textContent=`${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`;
-  updateNameLabels();
-  updateYearLabel();
-  buildInputForm();
+  updateLabels();updateYearLabel();
+  fillMonthSel();fillDayInpSels();
+  buildMonthlyForm();buildDayForm();
   renderAll();
   document.getElementById('pin-status').textContent=getPin()?'設定済み':'未設定';
 }
-
-function changeYear(d){curYear+=d;updateYearLabel();buildInputForm();renderAll()}
+function changeYear(d){curYear+=d;updateYearLabel();buildMonthlyForm();renderAll()}
 function updateYearLabel(){document.getElementById('year-label').textContent=curYear+'年'}
+
+// 月別タブのセレクト
+function fillMonthSel(){
+  const sel=document.getElementById('mo-month-sel');
+  const prev=sel.value;
+  sel.innerHTML='';
+  // 全年月を収集
+  const md=loadM(),dd=loadD();
+  const yms=new Set([...Object.keys(md),...Object.keys(dd)].map(k=>k.slice(0,7)));
+  const now=new Date(),cur=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  yms.add(cur);
+  const sorted=[...yms].sort().reverse();
+  sorted.forEach(ym=>{
+    const[y,m]=ym.split('-');
+    const o=document.createElement('option');o.value=ym;o.textContent=`${y}年${parseInt(m)}月`;sel.appendChild(o);
+  });
+  if(prev&&sorted.includes(prev))sel.value=prev;else sel.value=sorted[0];
+}
+
+// 日別入力セレクト
+function fillDayInpSels(){
+  const ysel=document.getElementById('day-inp-year');
+  const msel=document.getElementById('day-inp-month');
+  const years=getYears().reverse();
+  const now=new Date();
+  ysel.innerHTML='';years.forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y+'年';ysel.appendChild(o)});
+  ysel.value=String(now.getFullYear());
+  msel.innerHTML='';MONTHS.forEach((m,i)=>{const o=document.createElement('option');o.value=i+1;o.textContent=m;msel.appendChild(o)});
+  msel.value=now.getMonth()+1;
+}
 
 function sw(name){
   ['overview','monthly','yearly','input','settings'].forEach((n,i)=>{
     document.querySelectorAll('.tab')[i].classList.toggle('active',n===name);
     document.getElementById('sec-'+n).classList.toggle('active',n===name);
   });
-  if(name==='input')buildInputForm();
+  if(name==='monthly')fillMonthSel();
+  if(name==='input'){buildMonthlyForm();buildDayForm();}
   renderAll();
 }
 
-// ── 入力フォーム生成 ──────────────────────────────
-function buildInputForm(){
-  const d=loadData();
+function setMonthView(mode,btn){
+  monthView=mode;
+  document.querySelectorAll('.view-toggle .vt-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.getElementById('mo-view-month').style.display=mode==='month'?'block':'none';
+  document.getElementById('mo-view-daily').style.display=mode==='daily'?'block':'none';
+  renderMonthly();
+}
+
+function setInpMode(mode,btn){
+  inpMode=mode;
+  document.querySelectorAll('.inp-mode-row .vt-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  document.getElementById('inp-view-month').style.display=mode==='month'?'block':'none';
+  document.getElementById('inp-view-daily').style.display=mode==='daily'?'block':'none';
+}
+
+// ── 月次入力 ──────────────────────────────────────
+function buildMonthlyForm(){
+  const d=loadM();
   ['a','b'].forEach(s=>{
-    const container=document.getElementById('inp-'+s);
-    container.innerHTML='';
+    const c=document.getElementById('inp-'+s);c.innerHTML='';
     MONTHS.forEach((m,i)=>{
       const key=`${curYear}-${String(i+1).padStart(2,'0')}`;
       const val=d[key]?d[key][s]:'';
-      const row=document.createElement('div');
-      row.className='month-row';
+      const row=document.createElement('div');row.className='month-row';
       row.innerHTML=`<label>${m}</label><input type="number" id="f-${s}-${i}" value="${val||''}" placeholder="0" min="0" inputmode="numeric" class="${val?'has-val':''}" oninput="this.classList.toggle('has-val',!!this.value)">`;
-      container.appendChild(row);
+      c.appendChild(row);
     });
   });
   document.getElementById('inp-title').textContent=`月次売上入力（${curYear}年）`;
+  const{a,b}=getNames();
+  document.getElementById('inp-name-a').textContent=a;
+  document.getElementById('inp-name-b').textContent=b;
 }
-
-function saveData(){
-  const d=loadData();
-  let changed=0;
+function saveMonthly(){
+  const d=loadM();let changed=0;
   MONTHS.forEach((_,i)=>{
     const key=`${curYear}-${String(i+1).padStart(2,'0')}`;
     const va=parseInt(document.getElementById(`f-a-${i}`).value)||0;
     const vb=parseInt(document.getElementById(`f-b-${i}`).value)||0;
-    if(va||vb){d[key]={a:va,b:vb};changed++}
-    else delete d[key];
+    if(va||vb){d[key]={a:va,b:vb};changed++}else delete d[key];
   });
-  saveRaw(d);renderAll();
-  const msg=document.getElementById('inp-msg');
-  msg.textContent=`保存しました（${changed}ヶ月分）`;msg.className='msg ok';msg.style.display='block';
-  setTimeout(()=>msg.style.display='none',2500);
+  saveM(d);renderAll();
+  showMsg('inp-msg',`保存しました（${changed}ヶ月分）`,'ok');
+}
+
+// ── 日別入力 ──────────────────────────────────────
+function buildDayForm(){
+  const y=parseInt(document.getElementById('day-inp-year').value);
+  const m=parseInt(document.getElementById('day-inp-month').value);
+  const days=daysInMonth(y,m);
+  const d=loadD();
+  const{a:nameA,b:nameB}=getNames();
+  document.getElementById('dinp-name-a').textContent=nameA;
+  document.getElementById('dinp-name-b').textContent=nameB;
+  ['a','b'].forEach(s=>{
+    const c=document.getElementById('dinp-'+s);c.innerHTML='';
+    for(let day=1;day<=days;day++){
+      const key=`${y}-${String(m).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const val=d[key]?d[key][s]:'';
+      const row=document.createElement('div');row.className='month-row';
+      row.innerHTML=`<label>${day}日</label><input type="number" id="d-${s}-${day}" value="${val||''}" placeholder="0" min="0" inputmode="numeric" class="${val?'has-val':''}" oninput="this.classList.toggle('has-val',!!this.value)">`;
+      c.appendChild(row);
+    }
+  });
+}
+function saveDaily(){
+  const y=parseInt(document.getElementById('day-inp-year').value);
+  const m=parseInt(document.getElementById('day-inp-month').value);
+  const days=daysInMonth(y,m);
+  const d=loadD();let changed=0;
+  for(let day=1;day<=days;day++){
+    const key=`${y}-${String(m).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const va=parseInt(document.getElementById(`d-a-${day}`)?.value)||0;
+    const vb=parseInt(document.getElementById(`d-b-${day}`)?.value)||0;
+    if(va||vb){d[key]={a:va,b:vb};changed++}else delete d[key];
+  }
+  saveD(d);renderMonthly();
+  showMsg('dinp-msg',`保存しました（${changed}日分）`,'ok');
+}
+
+function showMsg(id,text,type){
+  const el=document.getElementById(id);el.textContent=text;el.className='msg '+type;el.style.display='block';
+  setTimeout(()=>el.style.display='none',2500);
 }
 
 // ── レンダリング ──────────────────────────────────
-function renderAll(){
-  renderOverview();renderMonthly();renderYearly();
-}
+function renderAll(){renderOverview();renderMonthly();renderYearly()}
 
 function renderOverview(){
-  const d=loadData();
-  const{a:nameA,b:nameB}=getNames();
+  const d=loadM();
   document.getElementById('ov-month-title').textContent=`月別売上（${curYear}年）`;
-
   ['a','b'].forEach(s=>{
-    let cum=0;
-    let html='';
+    let cum=0,html='';
     MONTHS.forEach((_,i)=>{
       const key=`${curYear}-${String(i+1).padStart(2,'0')}`;
-      const val=d[key]?d[key][s]||0:0;
-      cum+=val;
-      const isLast=i===11;
-      html+=`<tr>
-        <td>${i+1}月</td>
-        <td>${val?'¥'+fmt(val):'-'}</td>
-        <td class="cum">${cum?'¥'+fmt(cum):'-'}</td>
-      </tr>`;
+      const val=d[key]?d[key][s]||0:0;cum+=val;
+      html+=`<tr><td>${i+1}月</td><td>${val?'¥'+fmt(val):'-'}</td><td class="cum">${cum?'¥'+fmt(cum):'-'}</td></tr>`;
     });
-    // 合計行
-    const yearTotal=MONTHS.reduce((_,__,i)=>{const k=`${curYear}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k][s]||0:0)},0);
-    html+=`<tr class="total-row"><td>合計</td><td>¥${fmt(yearTotal)}</td><td></td></tr>`;
+    const tot=MONTHS.reduce((_,__,i)=>{const k=`${curYear}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k][s]||0:0)},0);
+    html+=`<tr class="total-row"><td>合計</td><td>¥${fmt(tot)}</td><td></td></tr>`;
     document.getElementById('ov-'+s).innerHTML=html;
   });
-
-  // 年間テーブル
-  const years=getYears();
-  let yHtml='';
-  const nowY=new Date().getFullYear();
+  const years=getYears(),nowY=new Date().getFullYear();
+  let yh='';
   years.forEach(y=>{
     const ta=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].a||0:0)},0);
     const tb=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].b||0:0)},0);
-    const tt=ta+tb;
-    yHtml+=`<tr class="${y==nowY?'cur-year':''}">
-      <td>${y}年</td>
-      <td class="a-val">${fmtN(ta)}</td>
-      <td class="b-val">${fmtN(tb)}</td>
-      <td class="total-val">${fmtN(tt)}</td>
-    </tr>`;
+    yh+=`<tr class="${y==nowY?'cur-year':''}"><td>${y}年</td><td class="a-val">${fmtY(ta)}</td><td class="b-val">${fmtY(tb)}</td></tr>`;
   });
-  document.getElementById('year-body').innerHTML=yHtml||'<tr><td colspan="4" class="empty-note">データなし</td></tr>';
-  document.getElementById('yt-a').textContent=nameA;
-  document.getElementById('yt-b').textContent=nameB;
+  document.getElementById('year-body').innerHTML=yh||'<tr><td colspan="3" class="empty-note">データなし</td></tr>';
+  const{a,b}=getNames();
+  document.getElementById('yt-a').textContent=a;document.getElementById('yt-b').textContent=b;
+  document.getElementById('ov-name-a').textContent=a;document.getElementById('ov-name-b').textContent=b;
 }
 
 function renderMonthly(){
-  const d=loadData();
+  const ym=document.getElementById('mo-month-sel')?.value;if(!ym)return;
+  const[y,m]=ym.split('-').map(Number);
   const{a:nameA,b:nameB}=getNames();
-  document.getElementById('mo-title').textContent=`月別詳細（${curYear}年）`;
-  document.getElementById('mo-ha').textContent=nameA;
-  document.getElementById('mo-hb').textContent=nameB;
-  let html='',cum=0;
-  MONTHS.forEach((_,i)=>{
-    const key=`${curYear}-${String(i+1).padStart(2,'0')}`;
-    const va=d[key]?d[key].a||0:0;
-    const vb=d[key]?d[key].b||0:0;
-    const tot=va+vb;cum+=tot;
-    html+=`<tr>
-      <td style="text-align:left;padding:7px 14px;color:#555;font-size:12px">${i+1}月</td>
-      <td style="color:#185fa5;padding:7px 10px">${va?'¥'+fmt(va):'-'}</td>
-      <td style="color:#c46b00;padding:7px 10px">${vb?'¥'+fmt(vb):'-'}</td>
-      <td style="font-weight:600;padding:7px 14px">${tot?'¥'+fmt(tot):'-'}</td>
-      <td style="color:#aaa;font-size:12px;padding:7px 14px">${cum?'¥'+fmt(cum):'-'}</td>
-    </tr>`;
-  });
-  const ta=MONTHS.reduce((_,__,i)=>{const k=`${curYear}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].a||0:0)},0);
-  const tb=MONTHS.reduce((_,__,i)=>{const k=`${curYear}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].b||0:0)},0);
-  html+=`<tr class="total-row">
-    <td style="text-align:left;padding:8px 14px">合計</td>
-    <td style="color:#185fa5;padding:8px 10px">¥${fmt(ta)}</td>
-    <td style="color:#c46b00;padding:8px 10px">¥${fmt(tb)}</td>
-    <td style="padding:8px 14px">¥${fmt(ta+tb)}</td>
-    <td style="padding:8px 14px"></td>
-  </tr>`;
-  document.getElementById('mo-body').innerHTML=html;
+  document.getElementById('mo-ha').textContent=nameA;document.getElementById('mo-hb').textContent=nameB;
+  document.getElementById('dv-name-a').textContent=nameA;document.getElementById('dv-name-b').textContent=nameB;
+
+  if(monthView==='month'){
+    const d=loadM();
+    document.getElementById('mo-title').textContent=`月別詳細（${y}年）`;
+    let html='';
+    const taAll=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].a||0:0)},0);
+    const tbAll=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].b||0:0)},0);
+    MONTHS.forEach((_,i)=>{
+      const key=`${y}-${String(i+1).padStart(2,'0')}`;
+      const va=d[key]?d[key].a||0:0,vb=d[key]?d[key].b||0:0;
+      html+=`<tr><td>${i+1}月</td><td style="color:#185fa5">${va?'¥'+fmt(va):'-'}</td><td style="color:#c46b00">${vb?'¥'+fmt(vb):'-'}</td></tr>`;
+    });
+    html+=`<tr class="total-row"><td>合計</td><td style="color:#185fa5">¥${fmt(taAll)}</td><td style="color:#c46b00">¥${fmt(tbAll)}</td></tr>`;
+    document.getElementById('mo-body').innerHTML=html;
+  } else {
+    // 日別ビュー
+    const d=loadD();
+    const days=daysInMonth(y,m);
+    document.getElementById('daily-title').textContent=`日別売上（${y}年${m}月）`;
+    ['a','b'].forEach(s=>{
+      let cum=0,html='';
+      for(let day=1;day<=days;day++){
+        const key=`${y}-${String(m).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+        const val=d[key]?d[key][s]||0:0;cum+=val;
+        html+=`<tr><td>${day}日</td><td>${val?'¥'+fmt(val):'-'}</td><td class="cum">${cum?'¥'+fmt(cum):'-'}</td></tr>`;
+      }
+      const tot=Array.from({length:days},(_,i)=>{const k=`${y}-${String(m).padStart(2,'0')}-${String(i+1).padStart(2,'0')}`;return d[k]?d[k][s]||0:0}).reduce((a,b)=>a+b,0);
+      html+=`<tr class="total-row"><td>合計</td><td>¥${fmt(tot)}</td><td></td></tr>`;
+      document.getElementById('dv-'+s).innerHTML=html;
+    });
+  }
 }
 
 function renderYearly(){
-  const d=loadData();
+  const d=loadM();
   const{a:nameA,b:nameB}=getNames();
-  document.getElementById('yr-ha').textContent=nameA;
-  document.getElementById('yr-hb').textContent=nameB;
-  const years=getYears();
-  const nowY=new Date().getFullYear();
+  document.getElementById('yr-ha').textContent=nameA;document.getElementById('yr-hb').textContent=nameB;
+  const years=getYears(),nowY=new Date().getFullYear();
   let html='';
   years.forEach(y=>{
     const ta=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].a||0:0)},0);
     const tb=MONTHS.reduce((_,__,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;return _+(d[k]?d[k].b||0:0)},0);
-    html+=`<tr class="${y==nowY?'cur-year':''}">
-      <td>${y}年</td>
-      <td class="a-val">${fmtN(ta)}</td>
-      <td class="b-val">${fmtN(tb)}</td>
-      <td class="total-val">${fmtN(ta+tb)}</td>
-    </tr>`;
+    html+=`<tr class="${y==nowY?'cur-year':''}"><td>${y}年</td><td class="a-val">${fmtY(ta)}</td><td class="b-val">${fmtY(tb)}</td></tr>`;
   });
-  document.getElementById('yr-body').innerHTML=html||'<tr><td colspan="4" class="empty-note">データなし</td></tr>';
+  document.getElementById('yr-body').innerHTML=html||'<tr><td colspan="3" class="empty-note">データなし</td></tr>';
 }
 
 // ── CSV ──────────────────────────────────────────
-function buildCSV(data,years){
+function buildCSV(years){
+  const md=loadM(),dd=loadD();
   const{a:nameA,b:nameB}=getNames();
-  let csv=`年,月,${nameA},${nameB},合計\n`;
-  years.forEach(y=>{
-    MONTHS.forEach((_,i)=>{
-      const key=`${y}-${String(i+1).padStart(2,'0')}`;
-      const va=data[key]?data[key].a||0:0;
-      const vb=data[key]?data[key].b||0:0;
-      if(va||vb)csv+=`${y},${i+1},${va},${vb},${va+vb}\n`;
-    });
-  });
+  let csv=`年,月,${nameA}（月次）,${nameB}（月次）\n`;
+  years.forEach(y=>{MONTHS.forEach((_,i)=>{const k=`${y}-${String(i+1).padStart(2,'0')}`;const va=md[k]?md[k].a||0:0,vb=md[k]?md[k].b||0:0;if(va||vb)csv+=`${y},${i+1},${va},${vb}\n`;})});
+  csv+=`\n年,月,日,${nameA}（日別）,${nameB}（日別）\n`;
+  const dkeys=[...new Set([...Object.keys(dd)].filter(k=>years.some(y=>k.startsWith(y))))].sort();
+  dkeys.forEach(k=>{const[y,m,d]=k.split('-');const va=dd[k]?dd[k].a||0:0,vb=dd[k]?dd[k].b||0:0;if(va||vb)csv+=`${y},${parseInt(m)},${parseInt(d)},${va},${vb}\n`;});
   return csv;
 }
 function dlCSV(csv,name){const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click()}
-function exportCSV(){dlCSV(buildCSV(loadData(),[String(curYear)]),`店舗売上_${curYear}.csv`)}
-function exportAllCSV(){dlCSV(buildCSV(loadData(),getYears()),'店舗売上_全期間.csv')}
+function exportCSV(){dlCSV(buildCSV([String(curYear)]),`店舗売上_${curYear}.csv`)}
+function exportAllCSV(){dlCSV(buildCSV(getYears()),'店舗売上_全期間.csv')}
 function importCSV(input){
   const file=input.files[0];if(!file)return;
   const reader=new FileReader();
   reader.onload=e=>{
     try{
       const lines=e.target.result.replace(/^\uFEFF/,'').split('\n').filter(l=>l.trim());
-      if(!lines.length||!lines[0].includes('年')){alert('フォーマットが違います');return}
-      const d=loadData();let added=0;
+      const md=loadM(),dd=loadD();let ma=0,da=0;
+      let mode='month';
       for(let i=1;i<lines.length;i++){
-        const cols=lines[i].split(',');
-        if(cols.length<4)continue;
-        const y=cols[0].trim(),mo=cols[1].trim(),va=parseInt(cols[2])||0,vb=parseInt(cols[3])||0;
-        if(!y.match(/^\d{4}$/)||!mo.match(/^\d{1,2}$/))continue;
-        const key=`${y}-${mo.padStart(2,'0')}`;
-        if(va||vb){d[key]={a:va,b:vb};added++}
+        const l=lines[i].trim();if(!l)continue;
+        if(l.startsWith('年,月,日')){mode='daily';continue}
+        if(l.startsWith('年,月')){mode='month';continue}
+        const cols=l.split(',');
+        if(mode==='month'&&cols.length>=4){
+          const y=cols[0].trim(),mo=cols[1].trim(),va=parseInt(cols[2])||0,vb=parseInt(cols[3])||0;
+          if(y.match(/^\d{4}$/)&&mo.match(/^\d{1,2}$/)){const k=`${y}-${mo.padStart(2,'0')}`;if(va||vb){md[k]={a:va,b:vb};ma++}}
+        }else if(mode==='daily'&&cols.length>=5){
+          const y=cols[0].trim(),mo=cols[1].trim(),dy=cols[2].trim(),va=parseInt(cols[3])||0,vb=parseInt(cols[4])||0;
+          if(y.match(/^\d{4}$/)&&mo.match(/^\d{1,2}$/)&&dy.match(/^\d{1,2}$/)){const k=`${y}-${mo.padStart(2,'0')}-${dy.padStart(2,'0')}`;if(va||vb){dd[k]={a:va,b:vb};da++}}
+        }
       }
-      saveRaw(d);renderAll();
-      alert(`インポート完了：${added}件`);
+      saveM(md);saveD(dd);renderAll();
+      alert(`インポート完了：月次${ma}件、日別${da}件`);
     }catch(err){alert('読み込みエラー：'+err.message)}
   };
   reader.readAsText(file,'UTF-8');input.value='';
@@ -571,12 +658,10 @@ function importCSV(input){
 function deleteAll(){
   if(!confirm('全データを削除しますか？\nこの操作は取り消せません。'))return;
   if(!confirm('本当に削除しますか？'))return;
-  localStorage.removeItem(DKEY);renderAll();alert('削除しました');
+  localStorage.removeItem(MKEY);localStorage.removeItem(DKEY);renderAll();alert('削除しました');
 }
 
-// SW
 if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}
-
 initPin();
 </script>
 </body>
